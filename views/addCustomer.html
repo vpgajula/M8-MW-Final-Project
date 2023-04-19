@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/styles.css">
+	<title>Customer Information Form</title>
+</head>
+
+<body>
+
+	<!-- Navigation bar -->
+
+	<nav>
+		<a class="active" href="https://localhost:3000/api/logout"><i class="fa-solid fa-right-from-bracket"></i>Logout</a>
+		<a class="active" href="https://localhost:3000/api/customers"><i class="fa-solid fa-users-viewfinder"></i>View Customers</a>
+		<a class="active" href="https://localhost:3000/api/loans"><i class="fa-solid fa-file-invoice-dollar"></i>View Loans</a>
+		<a class="active" href="https://localhost:3000/api/loans/addLoanForm"><i class="fa-solid fa-hand-holding-dollar"></i>Add New Loan</a>
+		<a class="active" href="https://localhost:3000/api/loansLedger"><i class="fa-solid fa-dollar-sign"></i>View Loans Ledger</a>
+		<a class="active" href="https://localhost:3000/api/home"><i class="fa-solid fa-house"></i>Home</a>
+	</nav>
+
+	<main class="container">
+		<h2>Add New Customer</h2>
+
+		<form class="add-customer-form" action="/api/customers" method="POST">
+
+			<div class="input-wrapper">
+				<label for="customerID">Customer ID</label>
+				<input type="text" id="customerID" name="customerID">
+			</div>
+
+			<div class="input-wrapper">
+				<label for="userName">User Name</label>
+				<input type="text" id="userName" name="userName">
+			</div>
+
+			<div class="input-wrapper">
+				<label for="customerFirstName">First Name</label>
+				<input type="text" id="customerFirstName" name="customerFirstName">
+			</div>
+
+			<div class="input-wrapper">
+				<label for="customerMiddleName">Middle Name</label>
+				<input type="text" id="customerMiddleName" name="customerMiddleName">
+			</div>
+
+			<div class="input-wrapper">
+				<label for="customerLastName">Last Name</label>
+				<input type="text" id="customerLastName" name="customerLastName">
+			</div>
+
+			<div class="input-wrapper">
+				<label for="dateofBirth">Date of Birth</label>
+				<input type="date" id="dateofBirth" name="dateofBirth">
+			</div>
+
+			<div class="input-wrapper">
+				<label for="gender">Gender</label>
+				<select id="gender" name="gender">
+					<option value="Male">Male</option>
+					<option value="Female">Female</option>
+				</select>
+			</div>
+
+			<div class="buttons-2">
+				<button class="btn" type="reset"><i class="fa-solid fa-arrow-rotate-left"></i>Reset</button><br>
+				<button class="btn" type="submit"><i class="fa-solid fa-user-plus"></i>Add Customer</button>
+			</div>
+
+		</form>
+
+		<h6>
+			<%=message%>
+		</h6>
+	</main>
+</body>
+
+</html>

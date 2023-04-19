@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.active {
+    font-size: 1em;
+    color: blue;
+}
+
+.add-customer-form {
+    background-color: rgb(247, 247, 249);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    /* gap: 10px; */
+}
+
+.btn {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    transition-duration: 0.4s;
+    background-color: #033c6b;
+    color: aliceblue;
+    border: none;
+    border-radius: 4px;
+    height: 40px;
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: #219af0;
+    color: white
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+}
+
+.buttons-2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 1rem;
+    grid-row-start: 4;
+    grid-column-start: 3;
+}
+
+.container {
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 4px;
+    width: 70%;
+    margin: auto;    
+}
+
+.container h1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: rgb(31, 31, 34);
+}
+
+.container h2 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(31, 31, 34);
+}
+
+h1 {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(28, 28, 31);
+}
+
+h2 {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(33, 33, 68);
+    padding: 0rem;
+}
+
+h6 {
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    padding: 10px 10px;
+    color: rgb(9, 9, 247);
+    height: 10px;
+}
+
+input {
+    border: 0.5px solid rgb(137, 137, 138);
+    border-radius: 4px;
+    height: 32px;
+}
+
+input:focus{
+    border-color: 0.5px solid #244fd0;
+}
+
+input[type=text] {
+    border: 0.5px solid rgb(137, 137, 138);
+    border-radius: 4px;
+    height: 32px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+}
+
+input[type=password] {
+    border: 0.5px solid rgb(137, 137, 138);
+    border-radius: 4px;
+    height: 32px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+}
+
+input[type=number] {
+    border: 0.5px solid rgb(137, 137, 138);
+    border-radius: 4px;
+    height: 32px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+}
+
+input[type=text]:focus {
+    border: 1px solid #033c6b;
+}
+
+input[type=password]:focus {
+    border: 1px solid #033c6b;
+}
+
+input[type=number]:focus {
+    border: 1px solid #033c6b;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 4px;
+}
+
+label {
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(31, 31, 34);
+}
+
+.login-form {
+    background-color: rgb(247, 247, 249);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 8px;
+    border-radius: 0px;
+}
+
+.login-container {
+    background-color: #033c6b;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 4px;
+    width: 400px;
+    margin: auto;    
+}
+
+.login-container h1 {
+    text-align: center;
+    color: aliceblue;
+}
+
+.login-container h5 {
+    text-align: center;
+    color: rgb(61, 135, 226);
+}
+
+/* Style the navigation bar */
+nav {
+    background-color: #033c6b;
+    overflow: hidden;
+    padding: 12px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+/* Style the links inside the navigation bar */
+nav a {
+    float: right;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+nav a:hover {
+    background-color: aliceblue;
+    color: black;
+}
+
+/* Add an active class to the current link */
+nav .active {
+    background-color: #219af0;
+    color: white;
+}
+
+option {
+    font-size: 14px;
+}
+
+p {
+    width: 60%;
+    font-size: 14px;
+}
+
+::placeholder {
+    font-size: small;
+}
+
+select {
+    border: 0.5px solid rgb(137, 137, 138);
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 33px;
+    width: 20rem;
+    box-sizing: border-box;
+    outline: none;
+}
+
+select:focus {
+    border: 1px solid #033c6b;
+}
+
+/* .main-header__item {
+    font-size: 1em;
+    background-color: rgb(246, 249, 249);
+    width: 200px;
+    flex-direction: row;
+    display: flex;
+} */
+
+table {
+    border-collapse: collapse;
+    border-color: black;
+    border: 1px solid rgb(146, 143, 143);
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1 px solid #cac9c9;
+}
+
+th {
+    background-color: #219af0;
+    color: white;
+}
+
+tr:hover {
+    background-color: #8bdcfc;
+}
+
+tr {
+    border: 1px solid #cac9c9;
+}
+
+ul {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+i {
+    padding-right: 6px;
+}

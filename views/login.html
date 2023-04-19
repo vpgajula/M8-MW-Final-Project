@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <title>Login Page</title>
+</head>
+
+<body>
+
+    <!-- Navigation bar -->
+    <nav>
+        <a class="active" href="loginForm"><i class="fa-solid fa-sign-in"></i>Login</a>
+        <a class="active" href="signupForm"><i class="fa-solid fa-pen-to-square"></i>Sign Up</a>
+        <a class="active" href="about"><i class="fa-solid fa-file-pen"></i>About</a>
+        <a class="active" href="home"><i class="fa-solid fa-house"></i>Home</a>
+    </nav>
+
+    <h1>Welcome to vpgajula first website!</h1>
+
+    <main class="login-container">
+        <h1>Login</h1>
+
+        <form class="login-form" action="/api/loginForm" method="POST">
+
+            <div class="input-wrapper">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" required placeholder="Enter email">
+            </div>
+
+            <div class="input-wrapper">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required placeholder="Enter password">
+            </div>
+
+            <div class="buttons">
+                <button class="btn" type="submit"><i class="fa-solid fa-sign-in"></i>Log In</button>
+                <!-- <button class="btn" type="submit" formaction="/api/logout">Log Out</button> -->
+            </div>
+        </form>
+
+        <div>
+            <form class="login-form" action="/api/signupForm" method="GET">
+                <h2> Don't have an account, sign up here! </h2>
+                <button class="btn" type="submit"><i class="fa-solid fa-pen-to-square"></i>Sign Up</button>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
